@@ -1,0 +1,18 @@
+# IDE
+.idea/
+.vscode/
+
+# PHP / local environment
+.env
+config.php
+
+# XAMPP
+xampp/
+htdocs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
