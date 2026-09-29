@@ -1,135 +1,104 @@
-🩺 My Doctor – Telemedicine Web Application
+# 🩺 My Doctor – Telemedicine Web Application
 
 A full-stack telemedicine web application designed to provide a digital platform for doctors, patients, and administrators to manage appointments, profiles, communication, and healthcare-related activities.
 
-📌 Overview
+## 📌 Overview
 
-My Doctor is a web-based healthcare management system developed using PHP, MySQL/MariaDB, HTML, CSS, and JavaScript.
+**My Doctor** is a web-based healthcare management system developed using PHP, MySQL/MariaDB, HTML, CSS, and JavaScript.
 
 The application provides role-based functionality for administrators, doctors, and patients. It includes dashboards, appointment management, doctor and patient management, authentication, communication, and real-time audio/video functionality.
 
-✨ Features
+---
 
-👨‍⚕️ Doctor
+## ✨ Features
 
-Doctor registration and authentication
+### 👨‍⚕️ Doctor
 
-Doctor profile management
+- Doctor registration and authentication
+- Doctor profile management
+- View and manage appointments
+- Manage patient-related information
+- Doctor dashboard
+- Communication with patients
+- Audio/video communication
 
-View and manage appointments
+### 👤 Patient
 
-Manage patient-related information
+- Patient registration and authentication
+- Patient profile management
+- Browse doctors
+- Book appointments
+- View appointment information
+- Appointment history
+- Communication with doctors
+- Audio/video communication
 
-Doctor dashboard
+### 👨‍💼 Admin
 
-Communication with patients
+- Admin authentication
+- Dashboard with system statistics
+- Doctor management
+- Patient management
+- Appointment management
+- User verification
+- Blocked-user management
 
-Audio/video communication
+### 📅 Appointment Management
 
-👤 Patient
+- Appointment booking
+- Appointment status management
+- Appointment history
+- Doctor and patient appointment views
 
-Patient registration and authentication
+### 💬 Communication
 
-Patient profile management
+- Doctor-patient chat
+- Real-time communication
+- Audio/video calling using WebRTC
+- Communication functionality independent of appointment management
 
-Browse doctors
+### 📊 Dashboard & Analytics
 
-Book appointments
+- Dashboard statistics
+- Doctor and patient data
+- Appointment statistics
+- Interactive charts and data visualization
 
-View appointment information
+---
 
-Appointment history
+## 🛠️ Technologies Used
 
-Communication with doctors
+### Frontend
 
-Audio/video communication
+- HTML5
+- CSS3
+- JavaScript
+- WebRTC
+- Chart.js
+- Fetch API
 
-👨‍💼 Admin
+### Backend
 
-Admin authentication
+- PHP
 
-Dashboard with system statistics
+### Database
 
-Doctor management
+- MySQL / MariaDB
 
-Patient management
+### Development Tools
 
-Appointment management
+- XAMPP
+- Apache
+- phpMyAdmin
+- Visual Studio Code
+- Git
+- GitHub
 
-User verification
+---
 
-Blocked-user management
+## 🏗️ Project Structure
 
-📅 Appointment Management
-
-Appointment booking
-
-Appointment status management
-
-Appointment history
-
-Doctor and patient appointment views
-
-💬 Communication
-
-Doctor-patient chat
-
-Real-time communication
-
-Audio/video calling using WebRTC
-
-Communication functionality independent of appointment management
-
-📊 Dashboard & Analytics
-
-Dashboard statistics
-
-Doctor and patient data
-
-Appointment statistics
-
-Interactive charts and data visualization
-
-🛠️ Technologies Used
-
-Frontend
-
-HTML5
-
-CSS3
-
-JavaScript
-
-WebRTC
-
-Chart.js
-
-Fetch API
-
-Backend
-
-PHP
-
-Database
-
-MySQL / MariaDB
-
-Development Tools
-
-XAMPP
-
-Apache
-
-phpMyAdmin
-
-Visual Studio Code
-
-Git
-
-GitHub
-
-🏗️ Project Structure
-
+```text
 my_doctor/
 │
 ├── app/
@@ -192,162 +161,178 @@ my_doctor/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
 
-The project structure may evolve as new features and improvements are added.
+> The project structure may evolve as new features and improvements are added.
 
-⚙️ Requirements
+---
+
+## ⚙️ Requirements
 
 To run this project locally, you need:
 
-PHP 8.x or a compatible version
+- PHP 8.x or a compatible version
+- MySQL / MariaDB
+- Apache Web Server
+- XAMPP
+- phpMyAdmin
+- Modern web browser
+- Git (optional)
 
-MySQL / MariaDB
+---
 
-Apache Web Server
+## 🚀 Installation & Setup
 
-XAMPP
+### 1. Clone the Repository
 
-phpMyAdmin
-
-Modern web browser
-
-Git (optional)
-
-🚀 Installation & Setup
-
-1. Clone the Repository
-
+```bash
 git clone https://github.com/racks1401/mydoctor-telemedicine-web-app.git
+```
 
 Navigate into the project directory:
 
+```bash
 cd mydoctor-telemedicine-web-app
+```
 
-2. Start XAMPP
+### 2. Start XAMPP
 
-Open the XAMPP Control Panel and start:
+Open the **XAMPP Control Panel** and start:
 
-Apache
-
-MySQL
+- Apache
+- MySQL
 
 Make sure both services are running successfully.
 
-3. Create the Database
+### 3. Create the Database
 
 Open phpMyAdmin:
 
+```text
 http://localhost/phpmyadmin
+```
 
 Create the required database.
 
 Then import the SQL backup located at:
 
+```text
 database/my_doctor_db_backup.sql
+```
 
 The SQL file contains the database structure required by the application.
 
-4. Configure the Database Connection
+### 4. Configure the Database Connection
 
 Open:
 
+```text
 config/database.php
+```
 
 Update the database configuration according to your local environment.
 
 Example:
 
+```php
 <?php
 
 $host = "localhost";
 $username = "root";
 $password = "";
 $database = "my_doctor";
+```
 
-The values above are examples for a local XAMPP environment. Use the appropriate credentials for your own setup.
+> The values above are examples for a local XAMPP environment. Use the appropriate credentials for your own setup.
 
-5. Place the Project in XAMPP
+### 5. Place the Project in XAMPP
 
-Copy the project into the XAMPP htdocs directory.
+Copy the project into the XAMPP `htdocs` directory.
 
 Example:
 
+```text
 C:\xampp\htdocs\my_doctor
+```
 
-6. Run the Application
+### 6. Run the Application
 
 Open your browser and navigate to:
 
+```text
 http://localhost/my_doctor/public/
+```
 
 The exact URL may vary depending on your XAMPP and project directory configuration.
 
-🗄️ Database
+---
 
-The application uses MySQL/MariaDB as its database system.
+## 🗄️ Database
+
+The application uses **MySQL/MariaDB** as its database system.
 
 The database backup is included in:
 
+```text
 database/my_doctor_db_backup.sql
+```
 
 The database contains tables required for managing:
 
-Users
+- Users
+- Doctors
+- Patients
+- Appointments
+- Authentication-related data
+- Other application data
 
-Doctors
+### Importing the Database
 
-Patients
+1. Open phpMyAdmin.
+2. Create the application database.
+3. Select the database.
+4. Click **Import**.
+5. Select:
 
-Appointments
-
-Authentication-related data
-
-Other application data
-
-Importing the Database
-
-Open phpMyAdmin.
-
-Create the application database.
-
-Select the database.
-
-Click Import.
-
-Select:
-
+```text
 database/my_doctor_db_backup.sql
+```
 
-Click Go.
+6. Click **Go**.
 
-For a public repository, use only test or sample data. Do not commit real patient, doctor, or user information.
+> For a public repository, use only test or sample data. Do not commit real patient, doctor, or user information.
 
-📸 Screenshots
+---
+
+## 📸 Screenshots
 
 Screenshots of the application's major interfaces can be added here.
 
-Admin Dashboard
+### Admin Dashboard
 
-Add screenshot here.
+_Add screenshot here._
 
-Doctor Dashboard
+### Doctor Dashboard
 
-Add screenshot here.
+_Add screenshot here._
 
-Patient Dashboard
+### Patient Dashboard
 
-Add screenshot here.
+_Add screenshot here._
 
-Appointment Management
+### Appointment Management
 
-Add screenshot here.
+_Add screenshot here._
 
-Doctor Management
+### Doctor Management
 
-Add screenshot here.
+_Add screenshot here._
 
-🔄 Application Flow
+---
 
+## 🔄 Application Flow
+
+```text
                     ┌─────────────────┐
                     │     Visitor     │
                     └────────┬────────┘
@@ -380,133 +365,96 @@ Add screenshot here.
                          ┌──────────────────┐
                          │ MySQL / MariaDB  │
                          └──────────────────┘
+```
 
-📂 Main Application Modules
+---
 
-Module
+## 📂 Main Application Modules
 
-Description
+| Module | Description |
+|---|---|
+| Authentication | Login, registration, and session management |
+| Admin | System and user management |
+| Doctors | Doctor profiles and management |
+| Patients | Patient profiles and management |
+| Appointments | Booking and appointment management |
+| Dashboard | Statistics and application overview |
+| Chat | Doctor-patient communication |
+| Calling | Real-time audio/video communication |
+| Database | MySQL/MariaDB data storage |
 
-Authentication
+---
 
-Login, registration, and session management
-
-Admin
-
-System and user management
-
-Doctors
-
-Doctor profiles and management
-
-Patients
-
-Patient profiles and management
-
-Appointments
-
-Booking and appointment management
-
-Dashboard
-
-Statistics and application overview
-
-Chat
-
-Doctor-patient communication
-
-Calling
-
-Real-time audio/video communication
-
-Database
-
-MySQL/MariaDB data storage
-
-🔐 Security
+## 🔐 Security
 
 The application includes authentication and role-based access control for different types of users.
 
 Security-related functionality includes:
 
-Authentication
-
-Role-based authorization
-
-Protected application areas
-
-Session management
-
-User verification
-
-Centralized database configuration
-
-Remember-me functionality
+- Authentication
+- Role-based authorization
+- Protected application areas
+- Session management
+- User verification
+- Centralized database configuration
+- Remember-me functionality
 
 For production deployment, additional security measures should be implemented, including:
 
-HTTPS
+- HTTPS
+- Secure cookies
+- CSRF protection
+- Strong password policies
+- Input validation and sanitization
+- Rate limiting
+- Environment-based configuration
+- Secure API credentials
+- Production database security
 
-Secure cookies
+---
 
-CSRF protection
-
-Strong password policies
-
-Input validation and sanitization
-
-Rate limiting
-
-Environment-based configuration
-
-Secure API credentials
-
-Production database security
-
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Possible future enhancements include:
 
-Online payment integration
+- Online payment integration
+- Prescription management
+- Medical report/document management
+- Push notifications
+- Improved video consultation
+- Advanced analytics
+- Cloud deployment
+- Mobile application integration
+- Enhanced security
+- Automated email/SMS notifications
 
-Prescription management
+---
 
-Medical report/document management
+## 📌 Project Status
 
-Push notifications
-
-Improved video consultation
-
-Advanced analytics
-
-Cloud deployment
-
-Mobile application integration
-
-Enhanced security
-
-Automated email/SMS notifications
-
-📌 Project Status
-
-🚧 Active Development
+🚧 **Active Development**
 
 The project is being continuously improved with new features, bug fixes, security improvements, and performance optimizations.
 
-📄 License
+---
+
+## 📄 License
 
 This project is developed for educational and portfolio purposes.
 
-See the LICENSE file for more information.
+See the [LICENSE](LICENSE) file for more information.
 
-👨‍💻 Author
+---
 
-Ravi Kumar Prabudh
+## 👨‍💻 Author
 
-GitHub: racks1401
+**Ravi Kumar Prabudh**
 
-Portfolio: ....
+- GitHub: [racks1401](https://github.com/racks1401)
+- Portfolio: [portfolio-site-c4ceb.web.app](https://portfolio-site-c4ceb.web.app/)
 
-⭐ Acknowledgements
+---
+
+## ⭐ Acknowledgements
 
 This project was developed as a full-stack telemedicine web application to explore healthcare management systems, role-based authentication, database-driven applications, appointment management, and real-time communication technologies.
