@@ -1,6 +1,6 @@
-# Built May-Jul 2025, published on GitHub Aug 2026.
-
 # 🩺 My Doctor – Telemedicine Web Application
+
+> Built May–Jun 2024 · Published on GitHub Sept 2026
 
 A full-stack telemedicine web application designed to provide a digital platform for doctors, patients, and administrators to manage appointments, profiles, communication, and healthcare-related activities.
 
