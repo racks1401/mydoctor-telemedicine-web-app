@@ -1,0 +1,14 @@
+# Uploaded files are user content: never execute them as PHP/scripts.
+<FilesMatch "\.(php|phtml|php[0-9]|phar|pl|py|cgi|sh|asp|aspx|jsp)$">
+    Require all denied
+</FilesMatch>
+
+# Turn the PHP engine off here (only when PHP runs as an Apache module, e.g. XAMPP)
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+
+Options -Indexes -ExecCGI

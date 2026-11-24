@@ -1,0 +1,24 @@
+service-account.json
+vendor/
+composer.phar
+.env
+*.log
+
+# User-uploaded files (personal data, not code). Keep folder + protection rules.
+public/uploads/**
+!public/uploads/
+!public/uploads/.htaccess
+!public/uploads/profile/
+!public/uploads/profile/.gitkeep
+
+# Personal notes and Office temp/lock files
+Users.docx
+~$*
+
+# OS / editor junk
+Thumbs.db
+.DS_Store
+
+# Local dev test scripts and editor settings
+scratch/
+.vscode/
